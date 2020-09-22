@@ -7,7 +7,7 @@
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<link rel="stylesheet" href="style.css">
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	 <link rel='shortcut icon' type='image/x-icon' src="fv.png">
+     <link rel="icon" href="fv.png">
      <title>Saaduddin Mahmud</title>
 
       <style type="text/css">
@@ -32,9 +32,13 @@
 </head>
 
 <body>
-
+    <div align="center">
+        <a href="#about" style="color:black"><b><u>About</u></b></a> || <a href="#news" style="color:black"><b><u>News</u></b></a> || 
+        <a href="#projects" style="color:black"><b><u>Projects </u></b></a> || <a href="#publications" style="color:black"><b><u>Publications</u></b></a> || 
+        <a href="#app" style="color:black"><b><u>Softwares</u></b></a> || <a href="#blogs" style="color:black"><b><u>Blogs</u></b></a>
+    </div>
     <div id="page-wrap">
-        <img src="pic.jpg" alt="Photo of saad" id="pic" style="width:231px;height:251px;"/>
+        <img src="pic.jpg" alt="Photo of saad" id="pic" style="width:200px;height:200px;"/>
     
         <div id="contact-info" class="vcard">
         
@@ -54,11 +58,23 @@
         </div>
                 
         
-            <p>
-                Hi, I am Saaduddin Mahmud. I am an undergraduate student at Department of Computer Science and Engineering,
-				University Of Dhaka. I am interested in Artificial Intelligence. My current research work includes Decision Making 
-				in Multi-Agent Systems and Security Games. You can download my complete CV here: <a href="SaadCV.pdf" style="color:red" download>Download CV</a>
-            </p>
+            <div ALIGN=JUSTIFY id="about">
+                I am a full-time research assistant at Cognitive Agents and Interaction Lab, University of Dhaka. 
+                Before joining the lab, I was an undergrad at the CSE department, University Of Dhaka. My current research interest includes:
+                <ul>
+                    <li>Multi-agent Coordination and Planing (DCOPs, Multi-agent RL).</li>
+                    <li>AI for Social Impact and Computational Sustainability (Applying Game-theory and RL for social good).</li> 
+                    <li>Algorithmic Fairness.</li>
+                    <li>Interaction Between Human and AI/Robot.</li>
+                </ul>
+                Although these are well established and separate subfields of AI, a common recurring theme in all of these is 
+                the interaction among multiple intelligent entities (Robots, Human, Society as a whole). The interesting patterns 
+                and complex challenges that emerge from these interactions inspire me to further investigate these areas. 
+                Ultimately my goal is to analyze such interactions and develop AI methods that solve these complex challenges; 
+                challenges such as Poverty, Hunger, Gender Equality, Access to Education and Health, Biodiversity Loss, Global Warming, 
+                and many more and have an overall good impact on the society and the environment we live in.
+                You can download my complete CV here: <a href="SaadCV.pdf" style="color:red" download>[CV]</a>
+            </div>
         
         
         <div class="clear"></div>
@@ -66,50 +82,95 @@
         <dl>
             <dd class="clear"></dd>
             
-            <h3>News:</h3>
+            <h3 id= "news">News:</h3>
             
                 <ul>
+                    <li><strong style="color:blue">September 2020:</strong> New preprint: 
+                    <strong> On Population-Based Algorithms for Distributed Constraint Optimization Problems</strong>
+                is now available!</li>
 					<li><strong style="color:blue">April 2020:</strong> IJCAI paper on <strong>Learning Optimal Temperature Region for Solving Mixed 
 						Integer Functional DCOPs</strong> accepted.</li>
-					<li><strong style="color:blue">February 2020:</strong> Started working at CAIL Research Group, University of Dhaka. </li>
+					<li><strong style="color:blue">February 2020:</strong> Started working at CAIL Research Group, University of Dhaka as a full-time research assitant. </li>
 					<li><strong style="color:blue">January 2020:</strong> AAMAS paper on <strong>AED: An Anytime Evolutionary DCOP Algorithm</strong> accepted.</li>
-					<li><strong style="color:blue">January 2020:</strong> Received a ICT innovation grant to work on Security Games!</li>
+					<li><strong style="color:blue">January 2020:</strong> Received a ICT Innovation Grant to work on Security Games!</li>
 					<li><strong style="color:blue">January 2020:</strong> Successfully defended my undergraduate thesis!</li>
-					
+					<li><strong style="color:blue">November 2019:</strong> AAAI paper on <strong>A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems </strong> accepted.</li>
 		    </ul>
             
             <dd class="clear"></dd>
-            
-            <h3>Blogs:</h3>
-            
-                <ul>
-					<li><strong style="color:blue">February 2019:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-3-c29b7628a289"
-					 style="color:black">Parallel Programming With CUDA Tutorial (Part-3: Matrix Multiplication)</a></li>
-					<li><strong style="color:blue">August 2018:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-2-96f6eaea2832"
-					 style="color:black">Parallel Programming With CUDA Tutorial (Part-2: Basics)</a></li>
-					<li><strong style="color:blue">August 2018:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-1-8c72dda64d93" 
-					style="color:black">Parallel Programming With CUDA Tutorial (Part-1: Setup)</a></li>
-                 </ul>
-            
-            
+            <h3 id="projects">Current Research Projects:</h3>
+                <ol>
+					<li><strong>Saaduddin Mahmud</strong>, Md. Mosaddek Khan, and Nicholas R. Jennings.
+                        On Population-Based Algorithms for Distributed Constraint Optimization Problems (Under Review).
+                    <a href="https://arxiv.org/abs/2009.01625" style="color:blue">[ARXIV]</a>
+                    <li>Using Reinforcement Learning for Multi-Agent Coordination and Allocation of Security Resources. On going research project as a part of the ICT Innovation Grant.</li>
+                   </ol>
             <dd class="clear"></dd>
-            <h3>Publications:</h3>
+            <h3 id="publications">Publications:</h3>
                 <ol>
 					<li><strong>Saaduddin Mahmud</strong>, Md. Mosaddek Khan, Moumita Choudhury, Long Tran-Thanh, and Nicholas R. Jennings.
-					Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs. To appear in the proceedings of the 29th 
-					International Joint Conference on Artificial Intelligence (IJCAI-PRICAI 2020).</li>
+					Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs. In the proceedings of the 29th 
+                    International Joint Conference on Artificial Intelligence <b>(IJCAI 2020)</b>.
+                    <a href="https://arxiv.org/abs/2002.12001" style="color:blue">[ARXIV]</a>
+                    <a href="https://www.ijcai.org/Proceedings/2020/0038.pdf" style="color:blue">[IJCAI]</a></li>
 					<li><strong>Saaduddin Mahmud</strong>, Moumita Choudhury, Md. Mosaddek Khan, Long Tran-Thanh, and Nicholas R. Jennings.
-					AED: An Anytime Evolutionary DCOP Algorithm. To appear in the proceedings of the 19th International Conference on Autonomous
-					Agents and Multi-Agent Systems (AAMAS 2020).</li>
+					AED: An Anytime Evolutionary DCOP Algorithm. In the proceedings of the 19th International Conference on Autonomous
+                    Agents and Multi-Agent Systems <b>(AAMAS 2020)</b>.
+                    <a href="https://arxiv.org/abs/1909.06254" style="color:blue">[ARXIV]</a>
+                    <a href="http://ifaamas.org/Proceedings/aamas2020/pdfs/p825.pdf" style="color:blue">[IFAAMAS]</a>
+                    <a href="https://dl.acm.org/doi/abs/10.5555/3398761.3398859" style="color:blue">[ACM]</a></li>
+					    
+                </li>
 					<li>Moumita Choudhury, <strong>Saaduddin Mahmud</strong>, and Md. Mosaddek Khan. A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems. 
-					To appear in the proceedings of the Thirty-Fourth AAAI Conference on 
-					Artificial Intelligence (AAAI 2020).</li>
-					<li><strong>Saaduddin Mahmud</strong> and Moumita Choudhury. Applying Population-Based Algorithms to Solve Large (F)DCOPs.
-					Undergraduate Thesis, Department of Computer Science and Engineering, University Of Dhaka, 2020.</li>
+					In the proceedings of the Thirty-Fourth AAAI Conference on 
+                    Artificial Intelligence <b>(AAAI 2020)</b>.
+                    <a href="https://aaai.org/ojs/index.php/AAAI/article/view/6198" style="color:blue">[AAAI]</a>
+                </li>
+					<li><strong>Saaduddin Mahmud</strong> and Moumita Choudhury (Equal Contribution). Applying Population-Based Algorithms to Solve Large (F)DCOPs.
+					<b>Undergraduate Thesis</b>, Department of Computer Science and Engineering, University Of Dhaka, 2020.</li>
 					
                    </ol>
-            
-            
+                    
+                   <dd class="clear"></dd>
+
+                   <h3 id="app">Softwares:</h3>
+                   <ol>
+						   <li><strong>AL.GO: </strong>A project written in java to visualize well known algorithms and help students learn them faster.
+                                <a href="https://www.youtube.com/watch?v=Gh0L1w_lDSg&t=54s" style="color:blue">[Youtube, 2017]</a></li> 
+                                <ul>
+                                    <li>Step by step algorithm visualizer.</li>
+                                    <li>Contains codes, problem links on specific topic to help students learn faster.</li>
+                                </ul>
+                                </li> 
+                        <li><strong>MuSyc: </strong>An android application for music synchronization across mobile devices.
+                            <a href="https://github.com/Saad-Mahmud/MUSYC" style="color:blue">[Github, 2017]</a></li> 
+                            <ul>
+                                <li>Music synchronization across different mobiles.</li>
+                                <li>Social-network for sharing music.</li>
+                            </ul>
+                            </li>   
+                            <li><strong>EasyML: </strong>A web application written in python for automated data visualization and classification.
+							<a href="https://github.com/Saad-Mahmud/EasyML" style="color:blue">[Github, 2018]</a></li> 
+							<ul>
+								<li>Automated data visualization and classification.</li>
+								<li>Fast hyper-parameter optimization for different classifiers.</li>
+							</ul>
+							</li>
+                      </ol>
+                       
+                      <dd class="clear"></dd>
+                   <h3 id="blogs">Blogs:</h3>
+                   
+                       <ul>
+                        <li><strong style="color:blue">August 2020:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-4-the-floyd-warshall-algorithm-5e1281c46bf6"
+                            style="color:black">Parallel Programming With CUDA Tutorial (Part-4: The Floyd-Warshall Algorithm)</a></li>   
+                        <li><strong style="color:blue">February 2019:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-3-c29b7628a289"
+                            style="color:black">Parallel Programming With CUDA Tutorial (Part-3: Matrix Multiplication)</a></li>
+                           <li><strong style="color:blue">August 2018:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-2-96f6eaea2832"
+                            style="color:black">Parallel Programming With CUDA Tutorial (Part-2: Basics)</a></li>
+                           <li><strong style="color:blue">August 2018:</strong> <a href="https://medium.com/@saadmahmud14/parallel-programming-with-cuda-tutorial-part-1-8c72dda64d93" 
+                           style="color:black">Parallel Programming With CUDA Tutorial (Part-1: Setup)</a></li>
+                        </ul>
             <dd class="clear"></dd>
            
         </dl>
