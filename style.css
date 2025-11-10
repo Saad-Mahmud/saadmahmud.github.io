@@ -136,6 +136,49 @@ body {
   font-size: 0.95rem;
 }
 
+/* Demo CTA buttons under avatar */
+.cta-demos {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+.demo-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  box-shadow: var(--shadow);
+}
+.demo-cta .ico { display: inline-block; font-size: 1.05rem; }
+.demo-cta .label { font-weight: 650; letter-spacing: .2px; font-size: 0.98rem; }
+.demo-cta.collab {
+  background: linear-gradient(135deg, rgba(58,123,213,.22), rgba(134,227,206,.18));
+}
+.demo-cta.terrarium {
+  background: linear-gradient(135deg, rgba(255,115,80,.24), rgba(255,180,120,.16));
+}
+.demo-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,.25); }
+
+/* Subtle attention animation */
+@keyframes soft-pulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.12); }
+  100% { filter: brightness(1); }
+}
+.demo-cta .ico { animation: soft-pulse 2.2s ease-in-out infinite; }
+.demo-cta.terrarium .ico { animation-delay: .6s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-cta .ico { animation: none; }
+}
+
 /* Typography */
 h1,h2,h3 { line-height: 1.25; }
 p { margin: 0.35rem 0 0.5rem; }
@@ -162,4 +205,5 @@ a:hover { color: var(--accent-2); }
   .avatar { max-width: 100%; }
   .brand .name { font-size: 2rem; }
   .brand .role { font-size: 1.1rem; }
+  .cta-demos { grid-template-columns: 1fr; }
 }
