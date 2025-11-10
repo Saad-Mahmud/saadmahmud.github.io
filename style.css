@@ -92,7 +92,8 @@ body {
 .card h3 { margin: 1rem 0 0.35rem; font-size: 1.1rem; color: var(--muted); }
 
 /* Profile */
-.profile { position: sticky; top: 1rem; }
+.profile { position: static; }
+.profile-stack { position: sticky; top: 1rem; }
 .avatar-wrap { display: flex; justify-content: center; }
 .avatar {
   width: 100%;
@@ -199,6 +200,7 @@ a:hover { color: var(--accent-2); }
 @media (max-width: 900px) {
   .container { grid-template-columns: 1fr; }
   .profile { position: static; }
+  .profile-stack { position: static; }
   .avatar { max-width: 100%; }
   .brand .name { font-size: 2rem; }
   .brand .role { font-size: 1.1rem; }
