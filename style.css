@@ -137,46 +137,37 @@ body {
 }
 
 /* Demo CTA buttons under avatar */
-.cta-demos {
-  margin-top: 0.75rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.6rem;
-}
-.demo-cta {
-  display: inline-flex;
+/* Demo tabs below profile card */
+.demo-tab {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  padding: 0.55rem 0.8rem;
-  border-radius: 12px;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
   border: 1px solid var(--border);
-  text-decoration: none;
   color: var(--text);
-  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  text-decoration: none;
+  background: var(--card);
   box-shadow: var(--shadow);
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
 }
-.demo-cta .ico { display: inline-block; font-size: 1.05rem; }
-.demo-cta .label { font-weight: 650; letter-spacing: .2px; font-size: 0.98rem; }
-.demo-cta.collab {
-  background: linear-gradient(135deg, rgba(58,123,213,.22), rgba(134,227,206,.18));
-}
-.demo-cta.terrarium {
-  background: linear-gradient(135deg, rgba(255,115,80,.24), rgba(255,180,120,.16));
-}
-.demo-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,.25); }
+.demo-tab .ico { font-size: 1.6rem; line-height: 1; animation: blink 1.3s ease-in-out infinite; }
+.demo-tab .label { font-weight: 800; letter-spacing: .25px; font-size: 1.3rem; }
+.demo-tab.collab { background: linear-gradient(135deg, rgba(58,123,213,.25), rgba(134,227,206,.15)); }
+.demo-tab.terrarium { background: linear-gradient(135deg, rgba(255,115,80,.28), rgba(255,180,120,.14)); }
+.demo-tab:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.28); }
 
-/* Subtle attention animation */
-@keyframes soft-pulse {
-  0% { filter: brightness(1); }
-  50% { filter: brightness(1.12); }
-  100% { filter: brightness(1); }
+/* Blinking emoji animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+  50% { opacity: .7; filter: drop-shadow(0 0 6px rgba(255,255,255,.25)); }
 }
-.demo-cta .ico { animation: soft-pulse 2.2s ease-in-out infinite; }
-.demo-cta.terrarium .ico { animation-delay: .6s; }
+.demo-tab.terrarium .ico { animation-delay: .4s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .demo-cta .ico { animation: none; }
+  .demo-tab .ico { animation: none; }
 }
 
 /* Typography */
@@ -205,5 +196,4 @@ a:hover { color: var(--accent-2); }
   .avatar { max-width: 100%; }
   .brand .name { font-size: 2rem; }
   .brand .role { font-size: 1.1rem; }
-  .cta-demos { grid-template-columns: 1fr; }
 }
