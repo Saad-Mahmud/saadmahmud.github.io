@@ -1,378 +1,162 @@
-/*!
- * LaTeX.css (https://latex.now.sh/)
- *
- * Source: https://github.com/vincentdoerig/latex-css
- * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
-*/
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/LM-regular.woff2') format('woff2'),
-    url('./fonts/LM-regular.woff') format('woff'),
-    url('./fonts/LM-regular.ttf') format('truetype');
+/* Modern, accessible academic profile theme */
+/* Color system */
+:root {
+  --bg: #0b0c10;
+  --bg-grad-1: #0b0c10;
+  --bg-grad-2: #10131a;
+  --text: #101317;
+  --muted: #56606b;
+  --card: #ffffff;
+  --border: rgba(16,19,23,0.08);
+  --accent: #3a7bd5;
+  --accent-2: #86e3ce;
+  --shadow: 0 8px 24px rgba(20, 20, 55, 0.08);
 }
 
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: italic;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/LM-italic.woff2') format('woff2'),
-    url('./fonts/LM-italic.woff') format('woff'),
-    url('./fonts/LM-italic.ttf') format('truetype');
+[data-theme="dark"] {
+  --bg: #0a0b0e;
+  --bg-grad-1: #0b0f16;
+  --bg-grad-2: #0a0d12;
+  --text: #e6e9ef;
+  --muted: #a6b0bb;
+  --card: #11161d;
+  --border: rgba(255,255,255,0.08);
+  --accent: #86e3ce;
+  --accent-2: #3a7bd5;
+  --shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url('./fonts/LM-bold.woff2') format('woff2'),
-    url('./fonts/LM-bold.woff') format('woff'),
-    url('./fonts/LM-bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: italic;
-  font-weight: bold;
-  font-display: swap;
-  src: url('./fonts/LM-bold-italic.woff2') format('woff2'),
-    url('./fonts/LM-bold-italic.woff') format('woff'),
-    url('./fonts/LM-bold-italic.ttf') format('truetype');
-}
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Make default font-size 1rem and add smooth scrolling to anchors */
-html {
-  font-size: 1rem;
-  scroll-behavior: smooth;
-}
-
+/* Resets */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
 body {
-  font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
-  line-height: 1.8;
-
-  max-width: 80ch;
-  min-height: 100vh;
-  overflow-x: hidden;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
-
-  counter-reset: theorem;
-  counter-reset: definition;
-
-  color: hsl(0, 5%, 10%);
-  background-color: hsl(210, 20%, 98%);
-
-  text-rendering: optimizeLegibility;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+               Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji",
+               "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
 }
 
-/* Justify and hyphenate all paragraphs */
-p {
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  margin-top: 1rem;
+/* Decorative background */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(1000px 1000px at 10% -10%, rgba(58,123,213,0.18), transparent 60%),
+              radial-gradient(900px 800px at 110% 10%, rgba(134,227,206,0.18), transparent 60%),
+              linear-gradient(180deg, var(--bg-grad-1), var(--bg-grad-2));
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.brand { display: flex; flex-direction: column; gap: 2px; }
+.brand .name { font-weight: 700; letter-spacing: 0.2px; }
+.brand .role { color: var(--muted); font-size: 0.95rem; }
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-/* Make links red */
-a,
-a:visited {
-  color: #a00;
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 1.25rem auto 4rem;
+  padding: 0 1rem;
 }
 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
+.sidebar { position: relative; }
+
+.content { min-width: 0; }
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem 1.1rem 1.0rem;
+  box-shadow: var(--shadow);
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+.card h2 { margin: 0 0 0.6rem; font-size: 1.35rem; }
+.card h3 { margin: 1rem 0 0.35rem; font-size: 1.1rem; color: var(--muted); }
 
-/* Prevent textarea from overflowing */
-textarea {
+/* Profile */
+.profile { position: sticky; top: 1rem; }
+.avatar-wrap { display: flex; justify-content: center; }
+.avatar {
   width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
+.quicklinks {
+  margin-top: 0.85rem;
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  align-items: center;
+}
+.quicklinks a {
+  color: var(--text);
+  text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: all .15s ease;
+}
+.quicklinks a:hover { transform: translateY(-1px); box-shadow: var(--shadow); color: var(--accent); }
+.pill {
+  padding: 0.3rem 0.65rem;
+  height: auto; width: auto;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(58,123,213,0.10), rgba(134,227,206,0.08));
 }
 
-/* Styles for inline code or code snippets */
-code,
-pre,
-kbd {
-  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-    monospace;
-  font-size: 85%;
-}
-pre {
-  padding: 1rem 1.4rem;
-  max-width: 100%;
-  overflow: auto;
-  border-radius: 4px;
-  background: hsl(210, 28%, 93%);
-}
-pre code {
-  font-size: 95%;
-  position: relative;
-}
-kbd {
-  background: hsl(210, 5%, 100%);
-  border: 1px solid hsl(210, 5%, 70%);
-  border-radius: 2px;
-  padding: 2px 4px;
-  font-size: 75%;
-}
+/* Typography */
+h1,h2,h3 { line-height: 1.25; }
+p { margin: 0.35rem 0 0.5rem; }
+a { color: var(--accent); }
+a:hover { color: var(--accent-2); }
 
-/* Make table 100% width, add borders between rows */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  max-width: 100%;
-}
-th,
-td {
-  text-align: left;
-  padding: 0.5rem;
-}
-td {
-  border-bottom: 1px solid hsl(0, 0%, 85%);
-}
-thead th {
-  border-bottom: 2px solid hsl(0, 0%, 70%);
-}
-tfoot th {
-  border-top: 2px solid hsl(0, 0%, 70%);
-}
+/* Lists */
+.list { margin: 0; padding-left: 1.25rem; }
+.list li { margin: 0.2rem 0; }
+.list .when { color: var(--muted); margin-right: 0.4rem; font-variant-numeric: tabular-nums; }
 
-/* Center align the title */
-h1:first-child {
-  text-align: center;
-}
+.pub-list { margin: 0.25rem 0 0.75rem; padding-left: 1.25rem; }
+.pub-list li { margin: 0.4rem 0; }
+.pub-list em { font-style: italic; }
 
-/* Nested ordered list for ToC */
-nav ol {
-  counter-reset: item;
-  padding-left: 2rem;
-}
-nav li {
-  display: block;
-}
-nav li:before {
-  content: counters(item, '.') ' ';
-  counter-increment: item;
-  padding-right: 0.85rem;
-}
+/* Footer */
+.foot { margin-top: 1rem; }
+.foot-inner { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.95rem; }
 
-/* Center definitions (most useful for display equations) */
-dl dd {
-  text-align: center;
-}
-
-/* Theorem */
-.theorem {
-  counter-increment: theorem;
-  display: block;
-  margin: 12px 0;
-  font-style: italic;
-}
-.theorem::before {
-  content: 'Theorem ' counter(theorem) '. ';
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Lemma */
-.lemma {
-  counter-increment: theorem;
-  display: block;
-  margin: 12px 0;
-  font-style: italic;
-}
-.lemma::before {
-  content: 'Lemma ' counter(theorem) '. ';
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Proof */
-.proof {
-  display: block;
-  margin: 12px 0;
-  font-style: normal;
-  position: relative;
-}
-.proof::before {
-  content: 'Proof. ' attr(title);
-  font-style: italic;
-}
-.proof:after {
-  content: '◾️';
-  position: absolute;
-  right: -12px;
-  bottom: -2px;
-}
-
-/* Definition */
-.definition {
-  counter-increment: definition;
-  display: block;
-  margin: 12px 0;
-  font-style: normal;
-}
-.definition::before {
-  content: 'Definition ' counter(definition) '. ';
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Center align author name, use small caps and add vertical spacing  */
-.author {
-  margin: 0.85rem 0;
-  font-variant-caps: small-caps;
-  text-align: center;
-}
-
-/* Make footnote text smaller and left align it (looks bad with long URLs) */
-.footnotes p {
-  text-align: left;
-  line-height: 1.5;
-  font-size: 85%;
-  margin-bottom: 0.4rem;
-}
-.footnotes {
-  border-top: 1px solid hsl(0, 0%, 39%);
-}
-
-/* Center title and paragraph */
-.abstract,
-.abstract p {
-  text-align: center;
-}
-.abstract {
-  margin: 2.25rem 0;
-}
-
-/* Format the LaTeX symbol correctly (a higher up, e lower) */
-.latex span:nth-child(1) {
-  text-transform: uppercase;
-  font-size: 0.75em;
-  vertical-align: 0.28em;
-  margin-left: -0.48em;
-  margin-right: -0.15em;
-  line-height: 1ex;
-}
-
-.latex span:nth-child(2) {
-  text-transform: uppercase;
-  vertical-align: -0.5ex;
-  margin-left: -0.1667em;
-  margin-right: -0.125em;
-  line-height: 1ex;
-}
-
-/* Heading typography */
-h1 {
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-  margin-bottom: 1.625rem;
-}
-
-h2 {
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin-top: 3rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-top: 2.5rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  margin-top: 2rem;
-}
-
-h5 {
-  font-size: 1rem;
-  margin-top: 1.8rem;
-}
-
-h6 {
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: normal;
-  margin-top: 2.5rem;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.625rem;
-}
-
-h1 + h2 {
-  margin-top: 1.625rem;
-}
-
-h2 + h3,
-h3 + h4,
-h4 + h5 {
-  margin-top: 0.8rem;
-}
-
-h5 + h6 {
-  margin-top: -0.8rem;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.8rem;
+/* Responsive */
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; }
+  .profile { position: static; }
+  .avatar { max-width: 100%; }
 }
