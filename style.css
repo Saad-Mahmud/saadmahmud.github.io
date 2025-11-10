@@ -62,8 +62,8 @@ body {
   -webkit-backdrop-filter: blur(6px);
 }
 .brand { display: flex; flex-direction: column; gap: 2px; }
-.brand .name { font-weight: 700; letter-spacing: 0.2px; }
-.brand .role { color: var(--muted); font-size: 0.95rem; }
+.brand .name { font-weight: 800; letter-spacing: 0.2px; font-size: 1.8rem; }
+.brand .role { color: var(--muted); font-size: 1.1rem; }
 .theme-toggle {
   border: 1px solid var(--border);
   background: transparent;
@@ -76,7 +76,7 @@ body {
 /* Layout */
 .container {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: 400px minmax(0, 1fr);
   gap: 1.25rem;
   max-width: 1100px;
   margin: 1.25rem auto 4rem;
@@ -104,7 +104,7 @@ body {
 .avatar-wrap { display: flex; justify-content: center; }
 .avatar {
   width: 100%;
-  max-width: 280px;
+  max-width: 340px;
   aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 16px;
@@ -133,6 +133,13 @@ body {
   font-size: 0.9rem;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(58,123,213,0.10), rgba(134,227,206,0.08));
+}
+
+.profile .meta {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 /* Typography */
