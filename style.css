@@ -64,14 +64,6 @@ body {
 .brand { display: flex; flex-direction: column; gap: 2px; }
 .brand .name { font-weight: 900; letter-spacing: 0.3px; font-size: 2.4rem; }
 .brand .role { color: var(--muted); font-size: 1.25rem; }
-.theme-toggle {
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text);
-  padding: 0.4rem 0.6rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
 
 /* Layout */
 .container {
