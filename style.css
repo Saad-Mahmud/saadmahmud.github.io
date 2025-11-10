@@ -52,8 +52,8 @@ body {
 
 /* Header */
 .site-header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,11 +75,11 @@ body {
   grid-template-columns: 460px minmax(0, 1fr);
   gap: 1.25rem;
   max-width: 1280px;
-  margin: 1.25rem auto 4rem;
+  margin: calc(var(--header-h) + 1rem) auto 4rem;
   padding: 0 1rem;
 }
 
-.sidebar { position: sticky; top: 1rem; align-self: start; height: max-content; z-index: 1; }
+.sidebar { position: sticky; top: calc(var(--header-h) + 1rem); align-self: start; height: max-content; z-index: 1; }
 
 .content { min-width: 0; }
 
