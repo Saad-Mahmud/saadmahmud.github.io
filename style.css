@@ -139,6 +139,11 @@ body {
 /* Demo CTA buttons under avatar */
 /* Demo tabs below profile card */
 .demo-tab {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.demo-tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,6 +158,7 @@ body {
   box-shadow: var(--shadow);
   transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
 }
+.demo-tab:link, .demo-tab:visited, .demo-tab:hover, .demo-tab:active { text-decoration: none; }
 .demo-tab .ico { font-size: 1.6rem; line-height: 1; animation: blink 1.3s ease-in-out infinite; }
 .demo-tab .label { font-weight: 800; letter-spacing: .25px; font-size: 1.3rem; }
 .demo-tab.collab { background: linear-gradient(135deg, rgba(58,123,213,.25), rgba(134,227,206,.15)); }
@@ -166,15 +172,15 @@ body {
 }
 .demo-tab.terrarium .ico { animation-delay: .4s; }
 
-@media (prefers-reduced-motion: reduce) {
-  .demo-tab .ico { animation: none; }
-}
+/* Do not disable demo blink for reduced motion to keep attention as requested */
 
 /* Typography */
 h1,h2,h3 { line-height: 1.25; }
 p { margin: 0.35rem 0 0.5rem; }
 a { color: var(--accent); }
 a:hover { color: var(--accent-2); }
+/* Keep demo tabs using neutral text color */
+.demo-tab, .demo-tab:hover, .demo-tab:focus { color: var(--text); }
 
 /* Lists */
 .list { margin: 0; padding-left: 1.25rem; }
