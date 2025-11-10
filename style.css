@@ -11,7 +11,7 @@
   --accent: #3a7bd5;
   --accent-2: #86e3ce;
   --shadow: 0 8px 24px rgba(20, 20, 55, 0.08);
-  --header-h: 72px;
+  --header-h: 88px;
 }
 
 [data-theme="dark"] {
@@ -75,11 +75,11 @@ body {
   grid-template-columns: 460px minmax(0, 1fr);
   gap: 1.25rem;
   max-width: 1280px;
-  margin: calc(var(--header-h) + 1rem) auto 4rem;
+  margin: calc(var(--header-h) + 1.5rem) auto 4rem;
   padding: 0 1rem;
 }
 
-.sidebar { position: sticky; top: calc(var(--header-h) + 1rem); align-self: start; height: max-content; z-index: 1; }
+.sidebar { position: sticky; top: calc(var(--header-h) + 1.5rem); align-self: start; height: max-content; z-index: 1; }
 
 .content { min-width: 0; }
 
