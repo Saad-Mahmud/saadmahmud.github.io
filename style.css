@@ -77,7 +77,7 @@ h1 { margin: 0; font-weight: 800; font-size: clamp(48px, 8.4vw, 118px); line-hei
 .pub .meta a { color: var(--accent); text-decoration: none; }
 .pub .meta .award { color: var(--news); font-weight: 400; }
 .pub .meta a:hover { text-decoration: underline; }
-.pats { display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); padding-block: 32px; border-top: 1px solid var(--rule); }
+.pats { margin-top: 48px; display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); padding-block: 32px; border-top: 1px solid var(--rule); }
 .pats h3 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
 .pats ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .pats span { display: block; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
@@ -107,3 +107,16 @@ footer { padding-top: 24px; border-top: 1px solid var(--rule); font-family: var(
 @media (max-width: 480px) { .pub { grid-template-columns: minmax(0, 1fr); gap: 0; } .exp li { grid-template-columns: minmax(0, 1fr); gap: 0; } }
 
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Blog page (blog/index.html): same masthead look, then a plain list of posts */
+.back { font-size: 14.5px; }
+.back a { text-decoration: none; font-weight: 500; color: var(--muted); }
+.back a:hover { color: var(--ink); }
+.bhead { padding-block: 48px 28px; border-bottom: 2px solid var(--ink); }
+.bhead p { margin: 14px 0 0; font-size: 19px; color: var(--muted); }
+.posts { list-style: none; margin: 0; padding: 12px 0 56px; max-width: 860px; }
+.posts li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.posts .yr { font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 4px; }
+.posts a { font-weight: 650; font-size: 18px; line-height: 1.4; text-decoration: none; text-wrap: pretty; }
+.posts a:hover { text-decoration: underline; }
+.posts .src { display: block; margin-top: 2px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
