@@ -1,210 +1,352 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="fv.png">
-    <title>Saaduddin Mahmud</title>
-    <meta name="description" content="PhD candidate at UMass Amherst focusing on alignment, multi-agent systems, and explainable decision-making with LLMs." />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="bg"></div>
-    <header class="site-header">
-      <div class="brand">
-        <span class="name">Saaduddin Mahmud</span>
-        <span class="role">PhD Candidate · UMass Amherst</span>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saaduddin Mahmud</title>
+  <meta name="description" content="Saaduddin (Saad) Mahmud builds physical intelligence and multi-agent systems at Waymo. PhD in Computer Science, UMass Amherst.">
+  <link rel="icon" href="fv.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Fragment+Mono&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Top strip: links, centered -->
+  <div class="strip">
+    <!-- Each link's icon color comes from its class (see "Link colors" in style.css) -->
+    <nav aria-label="Contact and profiles">
+      <a class="email" href="mailto:smahmud@umass.edu"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>Email</a>
+      <a class="scholar" href="https://scholar.google.com/citations?user=fMuMcAgAAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a>
+      <a class="github" href="https://github.com/Saad-Mahmud" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.79 2.72 1.27 3.39.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.53.11-3.18 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.84 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.65.23 2.88.11 3.18.75.81 1.2 1.83 1.2 3.09 0 4.41-2.69 5.38-5.25 5.66.42.36.8 1.07.8 2.17v3.19c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub</a>
+      <a class="x" href="https://twitter.com/saadu_ai" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.2 2H21l-6.3 7.2L22 22h-6.9l-4.6-6-5.3 6H2l6.8-7.7L2 2h7l4.2 5.5L18.2 2Zm-2.4 18h2.1L8.3 4H6.1l9.7 16Z"/></svg>X</a>
+      <a class="medium" href="https://medium.com/@saadmahmud14" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><ellipse cx="6.8" cy="12" rx="5.3" ry="5.6"/><ellipse cx="15.7" cy="12" rx="2.6" ry="5.3"/><ellipse cx="20.6" cy="12" rx=".95" ry="4.8"/></svg>Medium</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/saaduddin-mahmud-6b847b35/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.5 8h4v15h-4V8zm7.5 0h3.8v2.05h.05c.53-1.01 1.84-2.07 3.8-2.07 4.06 0 4.8 2.67 4.8 6.14V23h-4v-6.64c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"/></svg>LinkedIn</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="blog" href="#"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Saad&#x27;s Blog</a>
+      <a class="robo" href="https://robotricks.studio" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg>Robotricks.studio</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="cv" href="SaadCV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>CV</a>
+    </nav>
+  </div>
+
+  <!-- News ticker. Newest first: to add news, add one <li> here. The script at the bottom loops it. -->
+  <section class="ticker" aria-label="News">
+    <span class="tag">News</span>
+    <div class="viewport">
+      <div class="track">
+        <ul>
+          <li><time>Nov 2026</time>Earned PhD!</li>
+          <li><time>Sep 2026</time>Paper accepted at NeurIPS 2026.</li>
+          <li><time>Sep 2026</time>Paper accepted at CoRL 2026.</li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <main class="container">
-      <aside class="sidebar" aria-label="Profile">
-        <div class="profile-stack">
-        <div class="card profile">
-          <div class="avatar-wrap">
-            <img class="avatar" src="pic2.jpg" alt="Portrait of Saaduddin Mahmud" />
-          </div>
-          <div class="quicklinks">
-            <a href="mailto:smahmud@umass.edu" title="Email" aria-label="Email">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.4-.3 7.6 5.08 7.6-5.08a1 1 0 0 0-.7-.2H5.1a1 1 0 0 0-.7.2Zm17.2 1.86-8.3 5.54a1 1 0 0 1-1.1 0L3.9 8.06V17.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5V8.06Z"/></svg>
-            </a>
-            <a href="https://scholar.google.com/citations?user=fMuMcAgAAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
-              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-5 9 5-9 5-9-5z"/>
-                <path d="M7 12v5a9 9 0 0010 0v-5"/>
-                <path d="M12 14v7"/>
-              </svg>
-            </a>
-            <a href="https://github.com/Saad-Mahmud" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.03-.02-2.02-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.79 2.72 1.27 3.39.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.53.11-3.18 0 0 .98-.31 3.2 1.18.93-.26 1.93-.39 2.92-.39.99 0 1.99.13 2.92.39 2.22-1.49 3.2-1.18 3.2-1.18.63 1.65.23 2.88.11 3.18.75.81 1.2 1.83 1.2 3.09 0 4.41-2.69 5.38-5.25 5.66.42.36.8 1.07.8 2.17 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56C20.21 21.37 23.5 17.08 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/>
-              </svg>
-            </a>
-            <a href="https://twitter.com/saadu_ai" target="_blank" rel="noopener" title="X (Twitter)" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M18.2 2H21l-6.3 7.2L22 22h-6.9l-4.6-6-5.3 6H2l6.8-7.7L2 2h7l4.2 5.5L18.2 2Zm-2.4 18h2.1L8.3 4H6.1l9.7 16Z"/></svg>
-            </a>
-            <a href="https://medium.com/@saadmahmud14" target="_blank" rel="noopener" title="Medium" aria-label="Medium">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M2 6.5c0-.3.2-.5.5-.5h3.9c.2 0 .3 0 .4.2l3.8 6.4 3.3-6.3c.1-.2.2-.3.4-.3h5.2c.3 0 .5.2.5.5v.2l-1.8 1.7V17l1.8 1.7v.3c0 .3-.2.5-.5.5h-6c-.3 0-.5-.2-.5-.5V19l1.9-1.8V9.2L14 17.6c-.1.2-.2.3-.4.3h-.3c-.2 0-.3-.1-.4-.3L7.8 8.8v7.9L9.9 19v.3c0 .3-.2.5-.5.5H2.5c-.3 0-.5-.2-.5-.5V19l2-2.2V8.6l-2-1.9v-.2Z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/saaduddin-mahmud-6b847b35/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1.01 1.84-2.07 3.8-2.07 4.06 0 4.8 2.67 4.8 6.14V23h-4v-6.64c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.54 1.72-2.54 3.5V23h-4V8z"/></svg>
-            </a>
-            <a href="SaadCV.pdf" target="_blank" rel="noopener" class="pill">CV</a>
-          </div>
-          <div class="meta">Last updated: Nov 2025</div>
+  <!-- Masthead -->
+  <header class="mast">
+    <h1>Saaduddin<br>Mahmud</h1>
+    <img class="photo" src="saad.jpg" width="600" height="600" alt="Saaduddin Mahmud">
+  </header>
+
+  <!-- About + News -->
+  <section class="top">
+    <div>
+      <p class="about">
+        Hi, I’m Saad. My days are spent in Mountain View, CA, building physical intelligence and multi-agent systems on <a class="org" href="https://waymo.com" target="_blank" rel="noopener"><img src="logos/waymo-mark.png" width="96" height="51" alt="">Waymo</a>’s PrePlan team.
+        My nights are dedicated to philosophy, art, and music.
+        Prior to joining Waymo, I completed my PhD in Computer Science at <a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">UMass Amherst</a>.
+        I love exchanging ideas&#8288;—if you want to talk shop, debate philosophy, or just grab a coffee, <a href="mailto:smahmud@umass.edu">drop me a line</a>.
+      </p>
+    </div>
+    <div>
+      <p class="label">Experience</p>
+      <!-- Newest first; logos live in logos/ -->
+      <ul class="exp">
+        <li><time>2026</time><span><img src="logos/waymo.png" width="64" height="64" alt="">ML @ Waymo</span></li>
+        <li><time>2026</time><span><img src="logos/umass.png" width="64" height="64" alt="">PhD CS @ UMass Amherst</span></li>
+        <li><time>2026</time><span><img src="logos/firefly.png" width="64" height="64" alt="">PhD Intern @ Adobe Firefly</span></li>
+        <li><time>2024</time><span><img src="logos/nissan.png" width="64" height="64" alt="">PhD Intern @ Nissan AV Team</span></li>
+        <li><time>2019</time><span><img src="logos/dhaka.png" width="64" height="64" alt="">BSc CS @ University of Dhaka</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Research, grouped by topic -->
+  <div class="rhead">
+    <h2>Research</h2>
+    <nav aria-label="Research areas">
+      <a href="#t-phys">Physical Intelligence<sup>6</sup></a>
+      <a href="#t-align">Alignment<sup>4</sup></a>
+      <a href="#t-agents">Agentic LLMs<sup>5</sup></a>
+      <a href="#t-xai">Explainability<sup>3</sup></a>
+      <a href="#t-dcop">Coordination<sup>4</sup></a>
+    </nav>
+  </div>
+
+  <section class="topic" id="t-phys">
+    <div class="th">
+      <h3>Physical Intelligence</h3>
+      <span class="n">6 papers</span>
+      <p class="blurb">Robots and autonomous vehicles that learn from people, coordinate with each other, explain their decisions, and stay secure.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2606.09499" target="_blank" rel="noopener">Targeting World Models to Compromise Robot Learning Pipelines</a></div>
+          <div class="au">Ethan Rathbun, Ahmed Agha, <b>Saaduddin Mahmud</b>, Christopher Amato, Alina Oprea, Eugene Bagdasarian</div>
+          <div class="meta"><span>CoRL 2026 <b class="award">Spotlight</b></span><a href="https://arxiv.org/pdf/2606.09499" target="_blank" rel="noopener">PDF</a></div>
         </div>
-        <a href="https://agents-collab.github.io/" target="_blank" rel="noopener" class="demo-tab collab" title="CoLLAB demo" aria-label="CoLLAB Demo">
-          <span class="ico" aria-hidden="true">🚀</span>
-          <span class="label">CoLLAB Demo</span>
-        </a>
-        <a href="https://aisec.cs.umass.edu/projects/terrarium/" target="_blank" rel="noopener" class="demo-tab terrarium" title="Terrarium demo" aria-label="Terrarium Demo">
-          <span class="ico" aria-hidden="true">🔥</span>
-          <span class="label">Terrarium Demo</span>
-        </a>
+      </li>
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2609.23997" target="_blank" rel="noopener">RoboTalk: Learning Multi-Robot Communication and Coordination from Multimodal Demonstrations</a></div>
+          <div class="au">Dorian Benhamou Goldfajn, Mason Nakamura, <b>Saaduddin Mahmud</b>, Justin Svegliato, Kyle H. Wray, Shlomo Zilberstein</div>
+          <div class="meta"><span>Submitted to ICRA</span><a href="https://arxiv.org/pdf/2609.23997" target="_blank" rel="noopener">PDF</a></div>
         </div>
-      </aside>
+      </li>
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://openreview.net/forum?id=ZA7jafD41T" target="_blank" rel="noopener">Visual Grounding and Deliberation Help Multi-Robot Teams Make High-Stakes Decisions</a></div>
+          <div class="au">Mohammadreza Teymoorianfard, <b>Saaduddin Mahmud</b>, Jean-Philippe Monteuuis, Jonathan Petit, Shlomo Zilberstein, Amir Houmansadr, Eugene Bagdasarian</div>
+          <div class="meta"><span>Submitted to ICLR 2027</span><a href="https://openreview.net/pdf?id=ZA7jafD41T" target="_blank" rel="noopener">PDF</a><a href="https://openreview.net/forum?id=ZA7jafD41T" target="_blank" rel="noopener">OpenReview</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2024</span>
+        <div>
+          <div class="t"><a href="https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1346.pdf" target="_blank" rel="noopener">Explaining the Behavior of POMDP-based Agents Through the Impact of Counterfactual Information</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Marcell Vazquez-Chanlatte, Stefan Witwicki, Shlomo Zilberstein</div>
+          <div class="meta"><span>AAMAS 2024</span><a href="https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1346.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <div class="t"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10341801" target="_blank" rel="noopener">Learning Constraints on Autonomous Behavior from Proactive Feedback</a></div>
+          <div class="au">Connor Basich*, <b>Saaduddin Mahmud*</b>, Shlomo Zilberstein</div>
+          <div class="meta"><span>IROS 2023</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10341801" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <div class="t"><a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p689.pdf" target="_blank" rel="noopener">Semi-Autonomous Systems with Contextual Competence Awareness</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Connor Basich, Shlomo Zilberstein</div>
+          <div class="meta"><span>AAMAS 2023</span><a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p689.pdf" target="_blank" rel="noopener">PDF</a><a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598701" target="_blank" rel="noopener">ACM</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-      <section class="content">
-        <section class="card about" id="about">
-          <h2>About</h2>
-          <p>
-            I am a PhD candidate in Computer Science at <a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">UMass Amherst</a>, advised by <a href="https://groups.cs.umass.edu/shlomo/" target="_blank" rel="noopener">Shlomo Zilberstein</a>.
-            My research focuses on aligning AI agents using scalable reward learning and policy optimization methods. I also have extensive experience designing and analyzing cooperative and strategic multi-agent systems. <b>I am currently on the job market, seeking opportunities to research, develop, and deploy agentic systems.</b> </p>
-        </section>
+  <section class="topic" id="t-align">
+    <div class="th">
+      <h3>Alignment &amp; Preference Learning</h3>
+      <span class="n">4 papers</span>
+      <p class="blurb">Learning what people want from feedback and preferences, then optimizing agents and LLMs to act on it.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2508.10030.pdf" target="_blank" rel="noopener">Inference-Aware Prompt Optimization for Aligning Black-Box Large Language Models</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Mason Nakamura, Kyle Hollins Wray, Shlomo Zilberstein</div>
+          <div class="meta"><span>AAAI 2026</span><a href="https://arxiv.org/pdf/2508.10030.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2412.07207.pdf" target="_blank" rel="noopener">MAPLE: A Framework for Active Preference Learning Guided by Large Language Models</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Mason Nakamura, Shlomo Zilberstein</div>
+          <div class="meta"><span>AAAI 2025</span><a href="https://arxiv.org/pdf/2412.07207.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <div class="t"><a href="https://www.ijcai.org/proceedings/2023/0053.pdf" target="_blank" rel="noopener">Explanation-Guided Reward Alignment</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Sandhya Saisubramanian, Shlomo Zilberstein</div>
+          <div class="meta"><span>IJCAI 2023</span><a href="https://www.ijcai.org/proceedings/2023/0053.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <div class="t"><a href="https://ceur-ws.org/Vol-3381/6.pdf" target="_blank" rel="noopener">REVEALE: A Framework for Reward Verification and Learning</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Sandhya Saisubramanian, Shlomo Zilberstein</div>
+          <div class="meta"><span>SafeAI @ AAAI 2023</span><a href="https://ceur-ws.org/Vol-3381/6.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-        <section class="card news" id="news">
-          <h2>News</h2>
-          <ul class="list">
-            <li><span class="when">Nov 2025</span> Full paper accepted at AAAI 2026.</li>
-            <li><span class="when">Dec 2024</span> Full paper accepted at AAAI 2025.</li>
-            <li><span class="when">Dec 2023</span> Passed PhD portfolio with distinction.</li>
-          </ul>
-        </section>
+  <section class="topic" id="t-agents">
+    <div class="th">
+      <h3>Agentic LLMs &amp; Multi-Agent Systems</h3>
+      <span class="n">5 papers</span>
+      <p class="blurb">Benchmarks, coordination, and security for teams of LLM agents.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2602.15198" target="_blank" rel="noopener">Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems</a></div>
+          <div class="au">Mason Nakamura, Abhinav Kumar, Saswat Das, Sahar Abdelnabi, <b>Saaduddin Mahmud</b>, Ferdinando Fioretto, Shlomo Zilberstein, Eugene Bagdasarian</div>
+          <div class="meta"><span>NeurIPS 2026 Datasets &amp; Benchmarks</span><a href="https://arxiv.org/pdf/2602.15198" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://openreview.net/forum?id=ZA7jafD41T" target="_blank" rel="noopener">Visual Grounding and Deliberation Help Multi-Robot Teams Make High-Stakes Decisions</a></div>
+          <div class="au">Mohammadreza Teymoorianfard, <b>Saaduddin Mahmud</b>, Jean-Philippe Monteuuis, Jonathan Petit, Shlomo Zilberstein, Amir Houmansadr, Eugene Bagdasarian</div>
+          <div class="meta"><span>Submitted to ICLR 2027</span><a href="https://openreview.net/pdf?id=ZA7jafD41T" target="_blank" rel="noopener">PDF</a><a href="https://openreview.net/forum?id=ZA7jafD41T" target="_blank" rel="noopener">OpenReview</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <div class="t"><a href="https://openreview.net/forum?id=372FjQy1cF" target="_blank" rel="noopener">CoLLAB: A Framework for Designing Scalable Benchmarks for Agentic LLMs</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Eugene Bagdasarian, Shlomo Zilberstein</div>
+          <div class="meta"><span>SEA Workshop @ NeurIPS 2025</span><a href="https://openreview.net/forum?id=372FjQy1cF" target="_blank" rel="noopener">OpenReview</a><a href="https://github.com/Saad-Mahmud/CoLLAB_SEA" target="_blank" rel="noopener">Code</a><a href="https://agents-collab.github.io/" target="_blank" rel="noopener">Project</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2510.14312.pdf" target="_blank" rel="noopener">Terrarium: Revisiting the Blackboard for Studying Multi-agent Attacks</a></div>
+          <div class="au">Mason Nakamura, Abhinav Kumar, <b>Saaduddin Mahmud</b>, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian</div>
+          <div class="meta"><span>Preprint 2025</span><a href="https://arxiv.org/pdf/2510.14312.pdf" target="_blank" rel="noopener">PDF</a><a href="https://github.com/umass-aisec/Terrarium" target="_blank" rel="noopener">Code</a><a href="https://aisec.cs.umass.edu/projects/terrarium/" target="_blank" rel="noopener">Project</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/abs/2501.14189" target="_blank" rel="noopener">Distributed Multi-agent Coordination Using Multimodal Foundation Models</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Dorian Benhamou-Goldfajn, Shlomo Zilberstein</div>
+          <div class="meta"><span>arXiv 2025</span><a href="https://arxiv.org/abs/2501.14189" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2501.14189.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-        <section class="card patents" id="patents">
-          <h2>Patents</h2>
-          <ol class="pub-list">
-            <li>
-              <em>Dynamic Refinement of Custom Classes Using Zero-Shot Images.</em>
-              US Patent App. 18/821,352.
-            </li>
-            <li>
-              <em>Vehicle Decision Making Using Sequential Information Probing.</em>
-              US Patent App. 18/429,196.
-            </li>
-          </ol>
-        </section>
+  <section class="topic" id="t-xai">
+    <div class="th">
+      <h3>Explainable &amp; Trustworthy Autonomy</h3>
+      <span class="n">3 papers</span>
+      <p class="blurb">Causal and counterfactual explanations for sequential decisions, and agents that know their own competence.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <div class="t"><a href="https://www.jair.org/index.php/jair/article/view/18126" target="_blank" rel="noopener">Causal Explanations for Sequential Decision Making Under Uncertainty: Foundations and Analysis</a></div>
+          <div class="au">Samer B. Nashed, <b>Saaduddin Mahmud</b>, Claudia V. Goldman, Shlomo Zilberstein</div>
+          <div class="meta"><span>JAIR 2025 · AAAI 2026 Journal Track</span><a href="https://www.jair.org/index.php/jair/article/view/18126" target="_blank" rel="noopener">JAIR</a><a href="https://arxiv.org/pdf/2205.15462.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2024</span>
+        <div>
+          <div class="t"><a href="https://ojs.aaai.org/index.php/AAAI-SS/article/download/31774/33941" target="_blank" rel="noopener">Verification and Validation of AI Systems Using Explanations</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Sandhya Saisubramanian, Shlomo Zilberstein</div>
+          <div class="meta"><span>AAAI Fall Symposium 2024</span><a href="https://ojs.aaai.org/index.php/AAAI-SS/article/download/31774/33941" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <div class="t"><a href="https://link.springer.com/chapter/10.1007/978-3-031-40878-6_5" target="_blank" rel="noopener">Estimating Causal Responsibility for Explaining Autonomous Behavior</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Samer B. Nashed, Claudia V. Goldman, Shlomo Zilberstein</div>
+          <div class="meta"><span>EXTRAAMAS @ AAMAS 2023</span><a href="https://link.springer.com/chapter/10.1007/978-3-031-40878-6_5" target="_blank" rel="noopener">Springer</a><a href="https://link.springer.com/content/pdf/10.1007/978-3-031-40878-6_5.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-        <section class="card pubs" id="publications">
-          <h2>Publications</h2>
+  <section class="topic" id="t-dcop">
+    <div class="th">
+      <h3>Multi-Agent Coordination &amp; Optimization</h3>
+      <span class="n">4 papers</span>
+      <p class="blurb">Algorithms for distributed constraint optimization and cooperative planning.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2022</span>
+        <div>
+          <div class="t"><a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p1690.pdf" target="_blank" rel="noopener">A Simulation Based Online Planning Algorithm for Multi-Agent Cooperative Environments</a></div>
+          <div class="au">Rafid Ameer Mahmud, Fahim Faisal, <b>Saaduddin Mahmud</b>, Md. Mosaddek Khan</div>
+          <div class="meta"><span>AAMAS 2022 (extended abstract)</span><a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p1690.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2021</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/2002.12001.pdf" target="_blank" rel="noopener">Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Md. Mosaddek Khan, Moumita Choudhury, Long Tran-Thanh, Nicholas R. Jennings</div>
+          <div class="meta"><span>IJCAI 2021</span><a href="https://arxiv.org/pdf/2002.12001.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2020</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/1909.06254.pdf" target="_blank" rel="noopener">AED: An Anytime Evolutionary DCOP Algorithm</a></div>
+          <div class="au"><b>Saaduddin Mahmud</b>, Moumita Choudhury, Md. Mosaddek Khan, Long Tran-Thanh, Nicholas R. Jennings</div>
+          <div class="meta"><span>AAMAS 2020</span><a href="https://arxiv.org/pdf/1909.06254.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="yr">2020</span>
+        <div>
+          <div class="t"><a href="https://arxiv.org/pdf/1909.06168.pdf" target="_blank" rel="noopener">A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems</a></div>
+          <div class="au">Moumita Choudhury, <b>Saaduddin Mahmud</b>, Md. Mosaddek Khan</div>
+          <div class="meta"><span>AAAI 2020</span><a href="https://arxiv.org/pdf/1909.06168.pdf" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-          <h3>Journal</h3>
-          <ol class="pub-list">
-            <li>
-              Samer B. Nashed, <strong>Saaduddin Mahmud</strong>, Claudia V. Goldman, and Shlomo Zilberstein.
-              <em>Causal Explanations for Sequential Decision Making Under Uncertainty: Foundations and Analysis.</em>
-              Journal of Artificial Intelligence Research, 2025. Also accepted to AAAI 2026 (Journal Track). <a href="https://www.jair.org/index.php/jair/article/view/18126" target="_blank" rel="noopener">[JAIR]</a> <a href="https://arxiv.org/pdf/2205.15462.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-          </ol>
+  <section class="pats">
+    <h3>Patents</h3>
+    <ul>
+      <li>Dynamic Refinement of Custom Classes Using Zero-Shot Images<span>US Patent App. 18/821,352</span></li>
+      <li>Vehicle Decision Making Using Sequential Information Probing<span>US Patent App. 18/429,196</span></li>
+    </ul>
+  </section>
 
-          <h3>Conferences</h3>
-          <ol class="pub-list">
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Mason Nakamura, Kyle Hollins Wray, and Shlomo Zilberstein.
-              <em>Inference-Aware Prompt Optimization for Aligning Black-Box Large Language Models.</em>
-              AAAI 2026. <a href="https://arxiv.org/pdf/2508.10030.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Mason Nakamura, and Shlomo Zilberstein.
-              <em>MAPLE: A Framework for Active Preference Learning Guided by Large Language Models.</em>
-              AAAI 2025. <a href="https://arxiv.org/pdf/2412.07207.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Marcell VazquezChanlatte, Stefan Witwicki, and Shlomo Zilberstein.
-              <em>Explaining the Behavior of POMDP-based Agents Through the Impact of Counterfactual Information.</em>
-              AAMAS 2024. <a href="https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1346.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              Connor Basich*, <strong>Saaduddin Mahmud*</strong>, and Shlomo Zilberstein.
-              <em>Learning Constraints on Autonomous Behavior from Proactive Feedback.</em>
-              IROS 2023. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10341801" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Sandhya Saisubramanian, and Shlomo Zilberstein.
-              <em>Explanation-Guided Reward Alignment.</em>
-              IJCAI 2023.
-              <a href="https://www.ijcai.org/proceedings/2023/0053.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Connor Basich, and Shlomo Zilberstein.
-              <em>Semi-Autonomous Systems with Contextual Competence Awareness.</em>
-              AAMAS 2023. <a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p689.pdf" target="_blank" rel="noopener">[PDF]</a> <a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598701" target="_blank" rel="noopener">[ACM]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Md. Mosaddek Khan, Moumita Choudhury, Long Tran-Thanh, and Nicholas R. Jennings.
-              <em>Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs.</em>
-              IJCAI 2021. <a href="https://arxiv.org/pdf/2002.12001.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Moumita Choudhury, Md. Mosaddek Khan, Long Tran-Thanh, and Nicholas R. Jennings.
-              <em>AED: An Anytime Evolutionary DCOP Algorithm.</em>
-              AAMAS 2020. <a href="https://arxiv.org/pdf/1909.06254.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              Moumita Choudhury, <strong>Saaduddin Mahmud</strong>, and Md. Mosaddek Khan.
-              <em>A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems.</em>
-              AAAI 2020. <a href="https://arxiv.org/pdf/1909.06168.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-          </ol>
-
-          <h3>Workshops, Abstracts & Posters</h3>
-          <ol class="pub-list">
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Eugene Bagdasarian, and Shlomo Zilberstein.
-              <em>CoLLAB: A Framework for Designing Scalable Benchmarks for Agentic LLMs.</em>
-              Scaling Environments for Agents Workshop at NeurIPS 2025. <a href="https://openreview.net/forum?id=372FjQy1cF" target="_blank" rel="noopener">[OpenReview]</a> <a href="https://github.com/Saad-Mahmud/CoLLAB_SEA" target="_blank" rel="noopener">[GitHub]</a> <a href="https://agents-collab.github.io/" target="_blank" rel="noopener">[Project]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Sandhya Saisubramanian, and Shlomo Zilberstein.
-              <em>Verification and Validation of AI Systems Using Explanations.</em>
-              AAAI Fall Symposium 2024. <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/download/31774/33941" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Sandhya Saisubramanian, and Shlomo Zilberstein.
-              <em>REVEALE: A Framework for Reward Verification and Learning.</em>
-              SafeAI Workshop at AAAI 2023. <a href="https://ceur-ws.org/Vol-3381/6.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Samer B. Nashed, Claudia V. Goldman, and Shlomo Zilberstein.
-              <em>Estimating Causal Responsibility for Explaining Autonomous Behavior.</em>
-              EXTRAAMAS at AAMAS 2023. <a href="https://link.springer.com/chapter/10.1007/978-3-031-40878-6_5" target="_blank" rel="noopener">[Springer]</a> <a href="https://link.springer.com/content/pdf/10.1007/978-3-031-40878-6_5.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-            <li>
-              Rafid Ameer Mahmud, Fahim Faisal, <strong>Saaduddin Mahmud</strong>, and Md. Mosaddek Khan.
-              <em>A Simulation Based Online Planning Algorithm for Multi-Agent Cooperative Environments.</em>
-              AAMAS 2022 (Extended Abstract). <a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p1690.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-          </ol>
-
-          <h3>Preprints & Under Review</h3>
-          <ol class="pub-list">
-            <li>
-              Mason Nakamura, Abhinav Kumar, <strong>Saaduddin Mahmud</strong>, Sahar Abdelnabi, Shlomo Zilberstein, and Eugene Bagdasarian.
-              <em>Terrarium: Revisiting the Blackboard for Studying Multi-agent Attacks.</em>
-              Under review, ICLR 2026. <a href="https://arxiv.org/pdf/2510.14312.pdf" target="_blank" rel="noopener">[PDF]</a> <a href="https://github.com/umass-aisec/Terrarium" target="_blank" rel="noopener">[GitHub]</a> <a href="https://aisec.cs.umass.edu/projects/terrarium/" target="_blank" rel="noopener">[Project]</a>
-            </li>
-            <li>
-              <strong>Saaduddin Mahmud</strong>, Dorian Benhamou-Goldfajn, and Shlomo Zilberstein.
-              <em>Distributed Multi-agent Coordination Using Multimodal Foundation Models.</em>
-              arXiv 2025. <a href="https://arxiv.org/abs/2501.14189" target="_blank" rel="noopener">[arXiv]</a> <a href="https://arxiv.org/pdf/2501.14189.pdf" target="_blank" rel="noopener">[PDF]</a>
-            </li>
-          </ol>
-        </section>
-
-        
-      </section>
-    </main>
-
-    
-  </body>
- </html>
+  <footer>Last updated Nov 2026</footer>
+</div>
+<script>
+// News ticker: repeats the news list until it fills the bar, then scrolls it
+// right-to-left at a steady speed. Without this script the list just sits still.
+(function () {
+  var ticker = document.querySelector(".ticker");
+  if (!ticker || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var viewport = ticker.querySelector(".viewport"), track = ticker.querySelector(".track");
+  var list = track.querySelector("ul"), SPEED = 60; // pixels per second
+  function build() {
+    track.querySelectorAll("ul + ul").forEach(function (u) { u.remove(); });
+    var w = list.getBoundingClientRect().width;
+    if (!w) return;
+    var copies = Math.max(1, Math.ceil(viewport.clientWidth / w));
+    for (var i = 1; i < copies * 2; i++) {
+      var c = list.cloneNode(true);
+      c.setAttribute("aria-hidden", "true");
+      track.appendChild(c);
+    }
+    track.style.setProperty("--dur", (copies * w / SPEED) + "s");
+    ticker.classList.add("on");
+  }
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(build);
+  var t; addEventListener("resize", function () { clearTimeout(t); t = setTimeout(build, 200); });
+})();
+</script>
+</body>
+</html>
