@@ -1,5 +1,5 @@
 /* saadmahmud.com · Masthead design
-   Layout: a large name across the top, then About beside News and Experience, then each research area with its label pinned on the left. */
+   Layout: a large name across the top, then a scrolling news strip, then About beside Experience, then each research area with its label pinned on the left. */
 :root {
   --paper: #ffffff;
   --ink: #141517;
