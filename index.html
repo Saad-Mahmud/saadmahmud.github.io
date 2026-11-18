@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Fragment+Mono&display=swap">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <div class="wrap">
@@ -75,13 +75,47 @@
     </div>
   </section>
 
-  <!-- Patents -->
-  <section class="pats">
-    <h3>Patents</h3>
-    <ul>
-      <li><a href="https://patents.google.com/patent/US12559113B2/en" target="_blank" rel="noopener">Vehicle Decision Making Using Sequential Information Probing</a><span>US Patent 12,559,113 B2 (granted 2025) · App. 19/450,332</span></li>
-      <li>Dynamic Refinement of Custom Classes Using Zero-Shot Image Classifiers<span>US Patent App. 18/821,352</span></li>
-    </ul>
+  <!-- Patents, grouped by topic (same layout as Research) -->
+  <div class="rhead">
+    <h2>Patents</h2>
+    <nav aria-label="Patent areas">
+      <a href="#p-plan">AV Planning<sup>1</sup></a>
+      <a href="#p-perc">AV Perception<sup>1</sup></a>
+    </nav>
+  </div>
+
+  <section class="topic" id="p-plan">
+    <div class="th">
+      <h3>AV Planning</h3>
+      <span class="n">1 patent</span>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://patents.google.com/patent/US12559113B2/en" target="_blank" rel="noopener">Vehicle Decision Making Using Sequential Information Probing</a></div>
+          <div class="au">Marcell Vazquez-Chanlatte, Stefan Witwicki, Shlomo Zilberstein, <b>Saaduddin Mahmud</b></div>
+          <div class="meta"><span>US Patent 12,559,113 B2 · App. 19/450,332</span><a href="https://patents.google.com/patent/US12559113B2/en" target="_blank" rel="noopener">Google Patents</a></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="topic" id="p-perc">
+    <div class="th">
+      <h3>AV Perception</h3>
+      <span class="n">1 patent</span>
+    </div>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="yr">2026</span>
+        <div>
+          <div class="t"><a href="https://patents.google.com/patent/US20260065641A1/en" target="_blank" rel="noopener">Dynamic Refinement of Custom Classes Using Zero-Shot Image Classifiers</a></div>
+          <div class="au">Erik Lee St. Gray, Takehito Teraguchi, Stefan Witwicki, Shlomo Zilberstein, Marcell Vazquez-Chanlatte, <b>Saaduddin Mahmud</b></div>
+          <div class="meta"><span>US Patent App. 18/821,352</span><a href="https://patents.google.com/patent/US20260065641A1/en" target="_blank" rel="noopener">Google Patents</a></div>
+        </div>
+      </li>
+    </ol>
   </section>
 
   <!-- Research, grouped by topic -->
