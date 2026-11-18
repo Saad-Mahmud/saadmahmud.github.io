@@ -39,6 +39,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 .mast { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 32px; align-items: end; padding-block: 44px 32px; border-bottom: 2px solid var(--ink); }
 h1 { margin: 0; font-weight: 800; font-size: clamp(48px, 8.4vw, 118px); line-height: .9; letter-spacing: -.05em; }
+.mast h1 .hi { color: var(--news); } /* "Saad" in red */
 /* Round headshot: a thin ink ring, separated from the photo by a white gap */
 .photo { display: block; justify-self: start; width: 256px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 5px solid var(--paper); box-shadow: 0 0 0 2px var(--ink); }
 
