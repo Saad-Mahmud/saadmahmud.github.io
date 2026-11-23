@@ -1,12 +1,15 @@
 /* saadmahmud.com · Masthead design
    Layout: a large name across the top, then a scrolling news strip, then About beside Experience, then each research area with its label pinned on the left. */
 :root {
-  --paper: #ffffff;
-  --ink: #141517;
-  --muted: #696d74;
-  --rule: #e5e6e9;
-  --accent: #2f7d4f;
-  --news: #d93025;
+  /* Cream paper; every neutral shares one warm hue. One warm accent (brick red)
+     for emphasis and one darker cool accent (deep blue) for links, so the two
+     stay distinct for colour-blind readers too. */
+  --paper: #f7f1e3;   /* cream background */
+  --ink: #221d17;     /* warm near-black text */
+  --muted: #6e6354;   /* warm grey: dates, authors, labels */
+  --rule: #e3d8c3;    /* thin lines and link underlines */
+  --accent: #1f4e79;  /* deep blue: PDF/Code links, hovers, CV icon */
+  --news: #c2361d;    /* brick red: "Saad", NEWS tag, Spotlight */
   --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
   --mono: "Fragment Mono", ui-monospace, Menlo, monospace;
   color-scheme: light;
@@ -26,15 +29,15 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .strip nav svg { flex: none; color: var(--c, var(--ink)); }
 .strip nav .sep { width: 1px; height: 16px; background: var(--rule); }
 .strip nav .cv { font-weight: 700; }
-/* Link colors: each site's own brand color */
+/* Link colors: each site's own brand color (black brands use the warm ink) */
 .strip .email    { --c: #d93025; }
 .strip .scholar  { --c: #4285f4; }
-.strip .github   { --c: #181717; }
-.strip .x        { --c: #000000; }
-.strip .medium   { --c: #000000; }
+.strip .github   { --c: var(--ink); }
+.strip .x        { --c: var(--ink); }
+.strip .medium   { --c: var(--ink); }
 .strip .linkedin { --c: #0a66c2; }
-.strip .blog     { --c: #e8590c; }
-.strip .robo     { --c: #7c3aed; }
+.strip .blog     { --c: #d4520a; }
+.strip .robo     { --c: #6b5d80; }
 .strip .cv       { --c: var(--accent); }
 
 .mast { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 32px; align-items: end; padding-block: 44px 32px; border-bottom: 2px solid var(--ink); }
@@ -82,7 +85,7 @@ footer { padding-top: 24px; border-top: 1px solid var(--rule); font-family: var(
 
 /* News ticker: red NEWS tag on the left, items scrolling past like a TV news crawl */
 .ticker { display: flex; margin-top: 18px; border-block: 1px solid var(--rule); font-size: 15px; }
-.ticker .tag { flex: none; display: flex; align-items: center; padding: 0 12px; background: var(--news); color: #fff; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.ticker .tag { flex: none; display: flex; align-items: center; padding: 0 12px; background: var(--news); color: #fbf6ea; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .ticker .viewport { flex: 1; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 48px), transparent); }
 .ticker .track { display: flex; width: max-content; }
 .ticker.on .track { animation: ticker var(--dur, 30s) linear infinite; }
